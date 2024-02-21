@@ -3,18 +3,18 @@
 
 using namespace std;
 
-class MultiplicationTable 
+class MultipTable 
 {
     vector<vector<int>> table;
 public:
 
-    MultiplicationTable() 
+    MultipTable() 
     {
         table.resize(10, vector<int>(10, 0));
-        fillMultiplicationTable();
+        fillTable();
     }
 
-    void fillMultiplicationTable() 
+    void fillTable() 
     {
         for (int i = 0; i < table.size(); ++i) 
         {
@@ -40,8 +40,8 @@ public:
 
 int main() 
 {
-    MultiplicationTable multiplicationTable;
-    multiplicationTable.displayTable(std::cout);
+    MultipTable mt;
+    mt.displayTable(cout);
 
     return 0;
 }
